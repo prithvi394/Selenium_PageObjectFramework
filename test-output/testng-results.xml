@@ -2,49 +2,27 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="249017" started-at="2016-11-16T04:28:08Z" finished-at="2016-11-16T04:32:17Z">
+  <suite name="Default suite" duration-ms="73256" started-at="2016-11-16T05:58:07Z" finished-at="2016-11-16T05:59:20Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="249017" started-at="2016-11-16T04:28:08Z" finished-at="2016-11-16T04:32:17Z">
+    <test name="Default test" duration-ms="73256" started-at="2016-11-16T05:58:07Z" finished-at="2016-11-16T05:59:20Z">
       <class name="Grp1.testCases.LoginTestCase">
-        <test-method status="FAIL" signature="testSteps()[pri:0, instance:Grp1.testCases.LoginTestCase@8bd1b6a]" name="testSteps" duration-ms="248997" started-at="2016-11-15T23:28:08Z" finished-at="2016-11-15T23:32:17Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="PASS" signature="intializeFireFoxDriver()[pri:0, instance:Grp1.testCases.LoginTestCase@482f8f11]" name="intializeFireFoxDriver" is-config="true" duration-ms="72979" started-at="2016-11-16T00:58:07Z" finished-at="2016-11-16T00:59:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intializeFireFoxDriver -->
+        <test-method status="FAIL" signature="testSteps()[pri:0, instance:Grp1.testCases.LoginTestCase@482f8f11]" name="testSteps" duration-ms="99" started-at="2016-11-16T00:59:20Z" finished-at="2016-11-16T00:59:20Z">
+          <exception class="java.lang.Error">
             <message>
-              <![CDATA[Unable to locate element: #lid
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
-System info: host: 'Vayuputhra', ip: '192.168.0.10', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.8.0_65'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, firefoxOptions={args=[], prefs={}}, appBuildId=20161019084923, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=18868, browserVersion=49.0.2, platformVersion=6.2, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt, device=desktop}]
-Session ID: 19ca85bb-de4b-4dd8-b168-85ecaa86d997
-*** Element info: {Using=id, value=lid}]]>
+              <![CDATA[Unresolved compilation problem: 
+	Cannot make a static reference to the non-static method UserLogin(String, String) from the type LoginPagePOM
+]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: #lid
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
-System info: host: 'Vayuputhra', ip: '192.168.0.10', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.8.0_65'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, firefoxOptions={args=[], prefs={}}, appBuildId=20161019084923, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=18868, browserVersion=49.0.2, platformVersion=6.2, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt, device=desktop}]
-Session ID: 19ca85bb-de4b-4dd8-b168-85ecaa86d997
-*** Element info: {Using=id, value=lid}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:127)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:93)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:42)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:417)
-	at org.openqa.selenium.By$ById.findElement(By.java:218)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at Grp1.ZohoTestPOM.HomePagePOM.setUserName(HomePagePOM.java:56)
-	at Grp1.ZohoTestPOM.HomePagePOM.UserLogin(HomePagePOM.java:68)
-	at Grp1.testCases.LoginTestCase.testSteps(LoginTestCase.java:21)
+              <![CDATA[java.lang.Error: Unresolved compilation problem: 
+	Cannot make a static reference to the non-static method UserLogin(String, String) from the type LoginPagePOM
+
+	at Grp1.testCases.LoginTestCase.testSteps(LoginTestCase.java:42)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -71,11 +49,11 @@ Session ID: 19ca85bb-de4b-4dd8-b168-85ecaa86d997
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.Error -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSteps -->
       </class> <!-- Grp1.testCases.LoginTestCase -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

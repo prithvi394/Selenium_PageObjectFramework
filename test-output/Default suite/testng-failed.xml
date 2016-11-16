@@ -5,6 +5,7 @@
     <classes>
       <class name="Grp1.testCases.LoginTestCase">
         <methods>
+          <include name="intializeFireFoxDriver"/>
           <include name="testSteps"/>
         </methods>
       </class> <!-- Grp1.testCases.LoginTestCase -->
