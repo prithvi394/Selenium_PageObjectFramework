@@ -10,36 +10,28 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import Grp1.ZohoTestPOM.HomePagePOM;
-import Grp1.ZohoTestPOM.LoginPagePOM;
-import base.BaseClass;
+import Grp1.ZohoTestPOM.SignInSignUpPagePOM;
+import Grp1.base.BaseClass;
 
 public class LoginTestCase  {
 	
 	WebDriver driver;
 	String baseURL="https://www.zoho.com/";
 	HomePagePOM objHomePOM;
-	LoginPagePOM objLoginPOM;
+	SignInSignUpPagePOM objLoginPOM;
 	
 	@BeforeTest
-	public void intializeFireFoxDriver() throws InterruptedException{
-		System.setProperty("webdriver.gecko.driver", "C:\\Selenium Training\\Practice\\Firefox driver\\geckodriver.exe");
-		driver =new FirefoxDriver();
-		driver.manage().timeouts().implicitlyWait(240, TimeUnit.SECONDS);
-		driver.get(baseURL);
-		Thread.sleep(20000);
+	public void InitDriver(){
+		BaseClass baseObj=new BaseClass(driver);
+		driver= baseObj.intializeFirefoxDriver();
 	}
-
-	//
 	
-
 	@Test
-	public void testSteps(){	
-		 objHomePOM = new HomePagePOM(driver);
-		objHomePOM.ClickLogin();
-		
-		
-		objLoginPOM=new LoginPagePOM(driver);
-		////LoginPagePOM.UserLogin("prithviraj394@yahoo.com", "passw0rd");
+	public void testSteps() throws InterruptedException{	
+		HomePagePOM objHomePOM = new HomePagePOM(driver);
+		objHomePOM.ClickSignIn(driver);
+		objLoginPOM=new SignInSignUpPagePOM(driver);
+		objLoginPOM.UserLogin(driver, "seleniumtestemail1234@gmail.com", "passw0rd1234");
 	}
 	
 }
