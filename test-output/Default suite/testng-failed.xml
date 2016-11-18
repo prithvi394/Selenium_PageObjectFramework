@@ -5,7 +5,6 @@
     <classes>
       <class name="Grp1.testCases.LoginTestCase">
         <methods>
-          <include name="InitDriver"/>
           <include name="testSteps"/>
         </methods>
       </class> <!-- Grp1.testCases.LoginTestCase -->

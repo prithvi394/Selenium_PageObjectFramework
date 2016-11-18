@@ -3,37 +3,38 @@ package Grp1.ZohoTestPOM;
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.*;
 
-public class SignInSignUpPagePOM  {
+import Grp1.base.BaseClass;
+
+public class SignInSignUpPagePOM extends BaseClass {
 	
-	WebDriver driver;
+	public SignInSignUpPagePOM(String BrowserPicker) {
+		super(BrowserPicker);
+		// TODO Auto-generated constructor stub
+	}
+
 	//Locators
 	//LoginPage
 	By usrNameLoginPage=By.id("email");
 	By usrPswdLoginPage=By.id("passwd");
 	By signInButton=By.id("SubmitLogin");
 
-
-public SignInSignUpPagePOM(WebDriver driver) {
-		this.driver = driver;
-	}
-
-public  void setUserName(WebDriver driver,String UserName){	 
+public  void setUserName(String UserName){	 
 	 driver.findElement(usrNameLoginPage).sendKeys(UserName);
  }
  
- public void setUserPswd(WebDriver driver,String PassWord){	 
+ public void setUserPswd(String PassWord){	 
 	 driver.findElement(usrPswdLoginPage).sendKeys(PassWord);
  }
  
- public void clickSubmit(WebDriver driver){	 
+ public void clickSubmit(){	 
 	 driver.findElement(signInButton).click();
  }
  
- public void UserLogin(WebDriver driver,String usrName ,String pswdName ){
+ public void UserLogin(String usrName ,String pswdName ){
 	 System.out.println("Im here");
-	 this.setUserName(driver,usrName);
-	 setUserPswd(driver,pswdName);
-	 clickSubmit(driver);
+	 setUserName(usrName);
+	 setUserPswd(pswdName);
+	 clickSubmit();
  }
 
 }

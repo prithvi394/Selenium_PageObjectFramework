@@ -15,23 +15,18 @@ import Grp1.base.BaseClass;
 
 public class LoginTestCase  {
 	
-	WebDriver driver;
 	String baseURL="https://www.zoho.com/";
+	String BrowserPicker="CD";
 	HomePagePOM objHomePOM;
 	SignInSignUpPagePOM objLoginPOM;
 	
-	@BeforeTest
-	public void InitDriver(){
-		BaseClass baseObj=new BaseClass(driver);
-		driver= baseObj.intializeFirefoxDriver();
-	}
-	
 	@Test
-	public void testSteps() throws InterruptedException{	
-		HomePagePOM objHomePOM = new HomePagePOM(driver);
-		objHomePOM.ClickSignIn(driver);
-		objLoginPOM=new SignInSignUpPagePOM(driver);
-		objLoginPOM.UserLogin(driver, "seleniumtestemail1234@gmail.com", "passw0rd1234");
+	public void testSteps() throws InterruptedException {	
+		HomePagePOM objHomePOM = new HomePagePOM(BrowserPicker);
+		objHomePOM.ClickSignIn();
+		objLoginPOM=new SignInSignUpPagePOM(BrowserPicker);
+		objLoginPOM.UserLogin("seleniumtestemail1234@gmail.com", "passw0rd1234");
+		objLoginPOM.teardownDriver();
 	}
 	
 }
