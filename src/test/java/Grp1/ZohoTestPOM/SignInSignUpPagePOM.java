@@ -2,6 +2,9 @@ package Grp1.ZohoTestPOM;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.*;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.PageFactory;
 
 import Grp1.base.BaseClass;
 
@@ -10,13 +13,25 @@ public class SignInSignUpPagePOM extends BaseClass {
 	public SignInSignUpPagePOM(String BrowserPicker) {
 		super(BrowserPicker);
 		// TODO Auto-generated constructor stub
+		PageFactory.initElements(driver, this);
+		//
 	}
 
 	//Locators
 	//LoginPage
 	By usrNameLoginPage=By.id("email");
 	By usrPswdLoginPage=By.id("passwd");
-	By signInButton=By.id("SubmitLogin");
+	//By signInButton=By.id("SubmitLogin");
+	
+	@FindBy(how=How.ID,using="SubmitLogin")
+	WebElement signInButton;
+	
+	
+	
+
+	
+
+
 
 public  void setUserName(String UserName){	 
 	 driver.findElement(usrNameLoginPage).sendKeys(UserName);
@@ -27,7 +42,7 @@ public  void setUserName(String UserName){
  }
  
  public void clickSubmit(){	 
-	 driver.findElement(signInButton).click();
+	 signInButton.click();
  }
  
  public void UserLogin(String usrName ,String pswdName ){

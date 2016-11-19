@@ -1,17 +1,14 @@
 package Grp1.testCases;
 
 
-import java.util.concurrent.TimeUnit;
-
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeTest;
+import org.apache.commons.logging.Log;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.testng.annotations.Test;
+import org.apache.logging.log4j.*;
 
 import Grp1.ZohoTestPOM.HomePagePOM;
 import Grp1.ZohoTestPOM.SignInSignUpPagePOM;
-import Grp1.base.BaseClass;
 
 public class LoginTestCase  {
 	
@@ -19,14 +16,18 @@ public class LoginTestCase  {
 	String BrowserPicker="CD";
 	HomePagePOM objHomePOM;
 	SignInSignUpPagePOM objLoginPOM;
+	public final static Logger log = LogManager.getLogger(LoginTestCase.class);
 	
 	@Test
 	public void testSteps() throws InterruptedException {	
+	
+	    log.trace("LoginTestCase");
 		HomePagePOM objHomePOM = new HomePagePOM(BrowserPicker);
 		objHomePOM.ClickSignIn();
 		objLoginPOM=new SignInSignUpPagePOM(BrowserPicker);
 		objLoginPOM.UserLogin("seleniumtestemail1234@gmail.com", "passw0rd1234");
-		objLoginPOM.teardownDriver();
+		Thread.sleep(5000);
+		//objLoginPOM.teardownDriver();
 	}
 	
 }
