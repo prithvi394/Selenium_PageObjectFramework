@@ -9,8 +9,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.PageFactory;
 
-import Grp1.ZohoTestPOM.SignInSignUpPagePOM;
 import Grp1.testCases.LoginTestCase;
+import Grp1.testPOM.SignInSignUpPagePOM;
 
 public class BaseClass {
 	

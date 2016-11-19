@@ -1,4 +1,4 @@
-package Grp1.ZohoTestPOM;
+package Grp1.testPOM;
 
 import org.openqa.selenium.*;
 import Grp1.testCases.*;

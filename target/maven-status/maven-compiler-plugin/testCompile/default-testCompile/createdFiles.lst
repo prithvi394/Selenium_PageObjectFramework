@@ -1,5 +1,5 @@
-Grp1\ZohoTestPOM\SignInSignUpPagePOM.class
-Grp1\ZohoTestPOM\HomePagePOM.class
+Grp1\testPOM\HomePagePOM.class
+Grp1\testPOM\SignInSignUpPagePOM.class
 ScratchBook\ScratchBook.class
 Grp1\base\BaseClass.class
 Grp1\testCases\LoginTestCase.class

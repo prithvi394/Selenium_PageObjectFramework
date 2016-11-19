@@ -6,10 +6,11 @@ import org.apache.logging.log4j.Logger;
 //import org.junit.Test;
 import org.apache.logging.log4j.LogManager;
 import org.testng.annotations.*;
-import org.apache.logging.log4j.*;
 
-import Grp1.ZohoTestPOM.HomePagePOM;
-import Grp1.ZohoTestPOM.SignInSignUpPagePOM;
+import Grp1.testPOM.HomePagePOM;
+import Grp1.testPOM.SignInSignUpPagePOM;
+
+import org.apache.logging.log4j.*;
 
 public class LoginTestCase  {
 	
