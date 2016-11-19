@@ -30,7 +30,7 @@
             </plugin>
             <!-- Compiler plugin configures the java version to be usedfor compiling 
                 the code -->
-            <plugin>
+            <plugin>	
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
                     <source>1.8</source>
@@ -83,8 +83,8 @@
 	<dependency>
   		<groupId>org.testng</groupId>
   		<artifactId>testng</artifactId>
-  		<version>6.8</version>
-  		<scope>test</scope>
+  		<version>6.9.9</version>
+  		<scope>compile</scope>
 	</dependency>
   </dependencies>
 </project>

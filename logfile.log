@@ -5,3 +5,9 @@ FATAL | 2016-11-18 23:40:23 | [main] testCases.LoginTestCase (LoginTestCase.java
 INFO  | 2016-11-18 23:47:49 | [main] ZohoTestPOM.HomePagePOM (HomePagePOM.java:34) - LoginTestCase
 INFO  | 2016-11-18 23:50:20 | [main] base.BaseClass (BaseClass.java:30) - ChromeDriverDeclared
 INFO  | 2016-11-18 23:50:25 | [main] ZohoTestPOM.HomePagePOM (HomePagePOM.java:34) - Clicked on SignINButton
+INFO  | 2016-11-19 08:52:05 | [main] base.BaseClass (BaseClass.java:30) - ChromeDriverDeclared
+INFO  | 2016-11-19 08:52:10 | [main] ZohoTestPOM.HomePagePOM (HomePagePOM.java:34) - Clicked on SignINButton
+INFO  | 2016-11-19 08:52:39 | [main] base.BaseClass (BaseClass.java:30) - ChromeDriverDeclared
+INFO  | 2016-11-19 08:52:44 | [main] ZohoTestPOM.HomePagePOM (HomePagePOM.java:34) - Clicked on SignINButton
+INFO  | 2016-11-19 08:54:16 | [main] base.BaseClass (BaseClass.java:30) - ChromeDriverDeclared
+INFO  | 2016-11-19 08:54:21 | [main] ZohoTestPOM.HomePagePOM (HomePagePOM.java:34) - Clicked on SignINButton

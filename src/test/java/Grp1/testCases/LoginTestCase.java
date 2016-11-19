@@ -3,8 +3,9 @@ package Grp1.testCases;
 
 import org.apache.commons.logging.Log;
 import org.apache.logging.log4j.Logger;
+//import org.junit.Test;
 import org.apache.logging.log4j.LogManager;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import org.apache.logging.log4j.*;
 
 import Grp1.ZohoTestPOM.HomePagePOM;
@@ -18,7 +19,7 @@ public class LoginTestCase  {
 	SignInSignUpPagePOM objLoginPOM;
 	public final static Logger log = LogManager.getLogger(LoginTestCase.class);
 	
-	@Test
+	@BeforeTest
 	public void testSteps() throws InterruptedException {	
 	
 	    log.trace("LoginTestCase");
