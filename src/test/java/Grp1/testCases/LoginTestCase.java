@@ -23,7 +23,7 @@ public class LoginTestCase  {
 	@BeforeTest
 	public void testSteps() throws InterruptedException {	
 	
-	    log.trace("LoginTestCase");
+	    log.info("LoginTestCase started");
 		HomePagePOM objHomePOM = new HomePagePOM(BrowserPicker);
 		objHomePOM.ClickSignIn();
 		objLoginPOM=new SignInSignUpPagePOM(BrowserPicker);

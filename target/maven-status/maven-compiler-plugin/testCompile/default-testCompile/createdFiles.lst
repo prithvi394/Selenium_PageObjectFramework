@@ -1,5 +1,7 @@
 Grp1\testPOM\HomePagePOM.class
-Grp1\testPOM\SignInSignUpPagePOM.class
 ScratchBook\ScratchBook.class
 Grp1\base\BaseClass.class
+Grp1\HelperClasses\DatabaseHandler.class
+Grp1\testPOM\SignInSignUpPagePOM.class
+Grp1\HelperClasses\ExcelHandler.class
 Grp1\testCases\LoginTestCase.class

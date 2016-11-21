@@ -7,7 +7,7 @@
   <version>1.0</version>
   <packaging>jar</packaging>
 
-  <name>ZohoTest</name>
+  <name>Selenium_PageObjectFramework</name>
   <url>http://maven.apache.org</url>
   
     <build>

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="0" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13251" started-at="2016-11-19T04:50:18Z" finished-at="2016-11-19T04:50:31Z">
+  <suite name="Suite" duration-ms="14135" started-at="2016-11-19T15:05:24Z" finished-at="2016-11-19T15:05:38Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="13251" started-at="2016-11-19T04:50:18Z" finished-at="2016-11-19T04:50:31Z">
+    <test name="Test" duration-ms="14135" started-at="2016-11-19T15:05:24Z" finished-at="2016-11-19T15:05:38Z">
       <class name="Grp1.testCases.LoginTestCase">
-        <test-method status="PASS" signature="testSteps()[pri:0, instance:Grp1.testCases.LoginTestCase@fbd1f6]" name="testSteps" duration-ms="13237" started-at="2016-11-18T23:50:18Z" finished-at="2016-11-18T23:50:31Z">
+        <test-method status="PASS" signature="testSteps()[pri:0, instance:Grp1.testCases.LoginTestCase@23348b5d]" name="testSteps" is-config="true" duration-ms="14129" started-at="2016-11-19T10:05:24Z" finished-at="2016-11-19T10:05:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSteps -->
       </class> <!-- Grp1.testCases.LoginTestCase -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
