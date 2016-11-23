@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="0" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="30151" started-at="2016-11-21T07:53:01Z" finished-at="2016-11-21T07:53:31Z">
+  <suite name="Default suite" duration-ms="30100" started-at="2016-11-23T00:03:48Z" finished-at="2016-11-23T00:04:19Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="30151" started-at="2016-11-21T07:53:01Z" finished-at="2016-11-21T07:53:31Z">
+    <test name="Default test" duration-ms="30100" started-at="2016-11-23T00:03:48Z" finished-at="2016-11-23T00:04:19Z">
       <class name="Grp1.testCases.LoginTestCase">
-        <test-method status="PASS" signature="testSteps()[pri:0, instance:Grp1.testCases.LoginTestCase@587e5365]" name="testSteps" is-config="true" duration-ms="30134" started-at="2016-11-21T02:53:01Z" finished-at="2016-11-21T02:53:31Z">
+        <test-method status="PASS" signature="testSteps()[pri:0, instance:Grp1.testCases.LoginTestCase@7776ab]" name="testSteps" is-config="true" duration-ms="30063" started-at="2016-11-22T19:03:48Z" finished-at="2016-11-22T19:04:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSteps -->
       </class> <!-- Grp1.testCases.LoginTestCase -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

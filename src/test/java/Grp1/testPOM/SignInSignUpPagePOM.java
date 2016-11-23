@@ -8,12 +8,14 @@ import org.openqa.selenium.support.PageFactory;
 
 import Grp1.base.BaseClass;
 
-public class SignInSignUpPagePOM extends BaseClass {
+public class SignInSignUpPagePOM {
 	
-	public SignInSignUpPagePOM(String BrowserPicker) {
-		super(BrowserPicker);
+	WebDriver driver;
+	
+	public SignInSignUpPagePOM(WebDriver driver) {
+		this.driver=driver;
 		// TODO Auto-generated constructor stub
-		PageFactory.initElements(driver, this);
+		//PageFactory.initElements(driver, this);
 		//
 	}
 
@@ -26,13 +28,6 @@ public class SignInSignUpPagePOM extends BaseClass {
 	@FindBy(how=How.ID,using="SubmitLogin")
 	WebElement signInButton;
 	
-	
-	
-
-	
-
-
-
 public  void setUserName(String UserName){	 
 	 driver.findElement(usrNameLoginPage).sendKeys(UserName);
  }

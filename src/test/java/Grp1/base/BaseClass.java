@@ -14,32 +14,37 @@ import Grp1.testPOM.SignInSignUpPagePOM;
 
 public class BaseClass {
 	
-	 public static WebDriver driver=null;
+	 public WebDriver driver=null;
 	 public String baseURL="http://automationpractice.com/index.php";
 	 
-	 public BaseClass(String BrowserPicker) {
+	 public BaseClass() {
 		 final Logger log = LogManager.getLogger(LoginTestCase.class);
-		 if(driver==null){
-			 	if(BrowserPicker=="FF"){
+		// if(driver==null){
+			// 	if(BrowserPicker=="FF"){
 			 		System.setProperty("webdriver.gecko.driver", "C:\\Selenium Training\\Practice\\Firefox driver\\geckodriver.exe");
 			 	    driver =new FirefoxDriver();
-			 	}
-			 	if(BrowserPicker=="CD"){
+			 	//}
+			 	/*if(BrowserPicker=="CD"){
 			 		System.setProperty("webdriver.chrome.driver", "C:\\Selenium Training\\Practice\\Chrome Driver\\chromedriver.exe");
 			 		driver =new ChromeDriver();
 			 		log.info("ChromeDriverDeclared");
-			 	}
+			 	}*/
 
 			 driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(240, TimeUnit.SECONDS);
 			driver.get(baseURL);
 			
-		 }
+		// }
 	 }
 	
+	public static void OpenUrl(WebDriver driver,String baseUrl){
+			System.out.println("I am trying to navigate to URL page ");
+			driver.get(baseUrl);
+			
+		}
 	 
 	 
-	public static void teardownDriver(){
+	public static void teardownDriver(WebDriver driver){
 		driver.quit();
 		
 	}

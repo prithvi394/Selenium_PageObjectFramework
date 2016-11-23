@@ -50,3 +50,59 @@ INFO  | 2016-11-21 02:53:06 | [main] base.BaseClass (BaseClass.java:30) - Chrome
 INFO  | 2016-11-21 02:53:13 | [main] testPOM.HomePagePOM (HomePagePOM.java:34) - Clicked on SignINButton
 INFO  | 2016-11-21 02:53:21 | [main] testCases.LoginTestCase (LoginTestCase.java:41) - LoginTestCase started
 INFO  | 2016-11-21 02:53:22 | [main] testPOM.HomePagePOM (HomePagePOM.java:34) - Clicked on SignINButton
+INFO  | 2016-11-22 15:59:06 | [main] testCases.LoginTestCase (LoginTestCase.java:40) - LoginTestCase started
+INFO  | 2016-11-22 15:59:06 | [main] testPOM.HomePagePOM (HomePagePOM.java:35) - Clicked on SignINButton
+INFO  | 2016-11-22 15:59:15 | [main] testCases.LoginTestCase (LoginTestCase.java:40) - LoginTestCase started
+INFO  | 2016-11-22 15:59:15 | [main] testPOM.HomePagePOM (HomePagePOM.java:35) - Clicked on SignINButton
+INFO  | 2016-11-22 16:00:36 | [main] testCases.LoginTestCase (LoginTestCase.java:40) - LoginTestCase started
+INFO  | 2016-11-22 16:00:36 | [main] testPOM.HomePagePOM (HomePagePOM.java:35) - Clicked on SignINButton
+INFO  | 2016-11-22 16:00:45 | [main] testCases.LoginTestCase (LoginTestCase.java:40) - LoginTestCase started
+INFO  | 2016-11-22 16:00:45 | [main] testPOM.HomePagePOM (HomePagePOM.java:35) - Clicked on SignINButton
+INFO  | 2016-11-22 16:03:43 | [main] testCases.LoginTestCase (LoginTestCase.java:40) - LoginTestCase started
+INFO  | 2016-11-22 16:03:43 | [main] testPOM.HomePagePOM (HomePagePOM.java:35) - Clicked on SignINButton
+INFO  | 2016-11-22 16:03:52 | [main] testCases.LoginTestCase (LoginTestCase.java:40) - LoginTestCase started
+INFO  | 2016-11-22 16:03:52 | [main] testPOM.HomePagePOM (HomePagePOM.java:35) - Clicked on SignINButton
+INFO  | 2016-11-22 16:20:49 | [main] testCases.LoginTestCase (LoginTestCase.java:50) - LoginTestCase started
+INFO  | 2016-11-22 16:20:49 | [main] testPOM.HomePagePOM (HomePagePOM.java:35) - Clicked on SignINButton
+INFO  | 2016-11-22 16:21:07 | [main] testCases.LoginTestCase (LoginTestCase.java:50) - LoginTestCase started
+INFO  | 2016-11-22 16:21:07 | [main] testPOM.HomePagePOM (HomePagePOM.java:35) - Clicked on SignINButton
+INFO  | 2016-11-22 16:22:17 | [main] testCases.LoginTestCase (LoginTestCase.java:50) - LoginTestCase started
+INFO  | 2016-11-22 16:22:17 | [main] testPOM.HomePagePOM (HomePagePOM.java:35) - Clicked on SignINButton
+INFO  | 2016-11-22 16:22:35 | [main] testCases.LoginTestCase (LoginTestCase.java:50) - LoginTestCase started
+INFO  | 2016-11-22 16:22:35 | [main] testPOM.HomePagePOM (HomePagePOM.java:35) - Clicked on SignINButton
+INFO  | 2016-11-22 16:24:01 | [main] testCases.LoginTestCase (LoginTestCase.java:50) - LoginTestCase started
+INFO  | 2016-11-22 16:24:01 | [main] testPOM.HomePagePOM (HomePagePOM.java:35) - Clicked on SignINButton
+INFO  | 2016-11-22 16:39:49 | [main] testCases.LoginTestCase (LoginTestCase.java:42) - LoginTestCase started
+INFO  | 2016-11-22 16:39:49 | [main] testPOM.HomePagePOM (HomePagePOM.java:35) - Clicked on SignINButton
+INFO  | 2016-11-22 16:40:06 | [main] testCases.LoginTestCase (LoginTestCase.java:42) - LoginTestCase started
+INFO  | 2016-11-22 16:40:06 | [main] testPOM.HomePagePOM (HomePagePOM.java:35) - Clicked on SignINButton
+INFO  | 2016-11-22 16:42:38 | [main] testCases.LoginTestCase (LoginTestCase.java:42) - LoginTestCase started
+INFO  | 2016-11-22 16:42:38 | [main] testPOM.HomePagePOM (HomePagePOM.java:35) - Clicked on SignINButton
+INFO  | 2016-11-22 16:42:47 | [main] testCases.LoginTestCase (LoginTestCase.java:42) - LoginTestCase started
+INFO  | 2016-11-22 16:42:47 | [main] testPOM.HomePagePOM (HomePagePOM.java:35) - Clicked on SignINButton
+INFO  | 2016-11-22 16:46:40 | [main] testCases.LoginTestCase (LoginTestCase.java:42) - LoginTestCase started
+INFO  | 2016-11-22 16:46:40 | [main] testPOM.HomePagePOM (HomePagePOM.java:35) - Clicked on SignINButton
+INFO  | 2016-11-22 16:46:50 | [main] testCases.LoginTestCase (LoginTestCase.java:42) - LoginTestCase started
+INFO  | 2016-11-22 16:46:50 | [main] testPOM.HomePagePOM (HomePagePOM.java:35) - Clicked on SignINButton
+INFO  | 2016-11-22 16:48:43 | [main] testCases.LoginTestCase (LoginTestCase.java:42) - LoginTestCase started
+INFO  | 2016-11-22 16:48:43 | [main] testPOM.HomePagePOM (HomePagePOM.java:35) - Clicked on SignINButton
+INFO  | 2016-11-22 16:50:46 | [main] testCases.LoginTestCase (LoginTestCase.java:42) - LoginTestCase started
+INFO  | 2016-11-22 16:50:46 | [main] testPOM.HomePagePOM (HomePagePOM.java:35) - Clicked on SignINButton
+INFO  | 2016-11-22 16:50:56 | [main] testCases.LoginTestCase (LoginTestCase.java:42) - LoginTestCase started
+INFO  | 2016-11-22 16:50:56 | [main] testPOM.HomePagePOM (HomePagePOM.java:35) - Clicked on SignINButton
+INFO  | 2016-11-22 16:52:19 | [main] testCases.LoginTestCase (LoginTestCase.java:42) - LoginTestCase started
+INFO  | 2016-11-22 16:52:19 | [main] testPOM.HomePagePOM (HomePagePOM.java:35) - Clicked on SignINButton
+INFO  | 2016-11-22 16:52:29 | [main] testCases.LoginTestCase (LoginTestCase.java:42) - LoginTestCase started
+INFO  | 2016-11-22 16:52:29 | [main] testPOM.HomePagePOM (HomePagePOM.java:35) - Clicked on SignINButton
+INFO  | 2016-11-22 16:53:49 | [main] testCases.LoginTestCase (LoginTestCase.java:42) - LoginTestCase started
+INFO  | 2016-11-22 16:53:49 | [main] testPOM.HomePagePOM (HomePagePOM.java:35) - Clicked on SignINButton
+INFO  | 2016-11-22 16:54:05 | [main] testCases.LoginTestCase (LoginTestCase.java:42) - LoginTestCase started
+INFO  | 2016-11-22 16:54:05 | [main] testPOM.HomePagePOM (HomePagePOM.java:35) - Clicked on SignINButton
+INFO  | 2016-11-22 17:45:13 | [main] testCases.LoginTestCase (LoginTestCase.java:42) - LoginTestCase started
+INFO  | 2016-11-22 17:45:13 | [main] testPOM.HomePagePOM (HomePagePOM.java:35) - Clicked on SignINButton
+INFO  | 2016-11-22 17:45:28 | [main] testCases.LoginTestCase (LoginTestCase.java:42) - LoginTestCase started
+INFO  | 2016-11-22 17:45:28 | [main] testPOM.HomePagePOM (HomePagePOM.java:35) - Clicked on SignINButton
+INFO  | 2016-11-22 19:03:52 | [main] testCases.LoginTestCase (LoginTestCase.java:42) - LoginTestCase started
+INFO  | 2016-11-22 19:03:52 | [main] testPOM.HomePagePOM (HomePagePOM.java:35) - Clicked on SignINButton
+INFO  | 2016-11-22 19:04:05 | [main] testCases.LoginTestCase (LoginTestCase.java:42) - LoginTestCase started
+INFO  | 2016-11-22 19:04:05 | [main] testPOM.HomePagePOM (HomePagePOM.java:35) - Clicked on SignINButton

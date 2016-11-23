@@ -6,6 +6,8 @@ import java.util.*;
 
 import org.apache.commons.logging.Log;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
 //import org.junit.Test;
 import org.apache.logging.log4j.LogManager;
 import org.testng.annotations.*;
@@ -18,17 +20,14 @@ import Grp1.testPOM.LandingPage;
 import Grp1.testPOM.SignInSignUpPagePOM;
 import org.apache.logging.log4j.*;
 
-public class LoginTestCase  {
-	
-	//String baseURL="https://www.zoho.com/";
-	
-	HomePagePOM objHomePOM;
-	SignInSignUpPagePOM objLoginPOM;
+public class LoginTestCase  extends BaseClass {
+
 	Map<String,String> LogCreds=new HashMap<String,String>();
 	public final static Logger log = LogManager.getLogger(LoginTestCase.class);
-	
+	//String baseURL="https://www.zoho.com/";
+
 	@BeforeTest
-	public void testSteps() throws InterruptedException, IOException {	
+	public void testSteps() throws InterruptedException, IOException{
 		ExcelHandler iterate=new ExcelHandler();
 		iterate.setExcelFile();
 		LogCreds=iterate.getCellData();
@@ -38,19 +37,23 @@ public class LoginTestCase  {
 		        System.out.println(pair.getKey() + ","+ pair.getValue());
 		        String UserID=(String)pair.getKey();
 		        String passWord=(String) pair.getValue();
+		        //LoginTestCase obj=new LoginTestCase();
+				BaseClass.OpenUrl(driver, baseURL); 
 		        log.info("LoginTestCase started");
-		        HomePagePOM objHomePOM = new HomePagePOM(ConfigurationClass.BrowserPicker);
+		        HomePagePOM objHomePOM = PageFactory.initElements(driver, HomePagePOM.class);
 		        objHomePOM.ClickSignIn();
-		        objLoginPOM=new SignInSignUpPagePOM(ConfigurationClass.BrowserPicker);
+		        SignInSignUpPagePOM objLoginPOM=PageFactory.initElements(driver, SignInSignUpPagePOM.class);
 		        objLoginPOM.UserLogin(UserID, passWord);
-		        LandingPage objLandingPage=new LandingPage(ConfigurationClass.BrowserPicker);
+		        LandingPage objLandingPage=PageFactory.initElements(driver, LandingPage.class);
 		        Thread.sleep(5000);
 		        objLandingPage.clickSignout();
-		        iterator.remove();  // avoids a ConcurrentModificationException
+		        //
+		        iterator.remove();
 		 }
-		 
-		BaseClass.teardownDriver(); 
+		 BaseClass.teardownDriver(driver); 
 	}
 	
+	 
 }
+
 

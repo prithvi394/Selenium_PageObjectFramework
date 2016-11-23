@@ -10,13 +10,14 @@ import org.openqa.selenium.support.PageFactory;
 import Grp1.base.BaseClass;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
-public class HomePagePOM extends BaseClass  {
+public class HomePagePOM {
 	
 	//Locators
+	WebDriver driver;
 	
-	public HomePagePOM(String BrowserPicker) {
-		super(BrowserPicker);
-		PageFactory.initElements(driver, this);
+	public HomePagePOM(WebDriver driver) {
+		this.driver=driver;
+		//PageFactory.initElements(driver, this);
 		// TODO Auto-generated constructor stub
 	}
 
