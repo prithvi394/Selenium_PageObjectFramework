@@ -2,16 +2,20 @@
 <testng-results skipped="0" failed="0" total="0" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="30100" started-at="2016-11-23T00:03:48Z" finished-at="2016-11-23T00:04:19Z">
+  <suite name="Suite" duration-ms="53364" started-at="2016-11-26T16:14:12Z" finished-at="2016-11-26T16:15:05Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="30100" started-at="2016-11-23T00:03:48Z" finished-at="2016-11-23T00:04:19Z">
+    <test name="Test" duration-ms="53364" started-at="2016-11-26T16:14:12Z" finished-at="2016-11-26T16:15:05Z">
       <class name="Grp1.testCases.LoginTestCase">
-        <test-method status="PASS" signature="testSteps()[pri:0, instance:Grp1.testCases.LoginTestCase@7776ab]" name="testSteps" is-config="true" duration-ms="30063" started-at="2016-11-22T19:03:48Z" finished-at="2016-11-22T19:04:18Z">
+        <test-method status="PASS" signature="testSteps()[pri:0, instance:Grp1.testCases.LoginTestCase@7ac0e420]" name="testSteps" is-config="true" duration-ms="27097" started-at="2016-11-26T11:14:12Z" finished-at="2016-11-26T11:14:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSteps -->
+        <test-method status="PASS" signature="testSteps()[pri:0, instance:Grp1.testCases.LoginTestGrid@289710d9]" name="testSteps" is-config="true" duration-ms="26261" started-at="2016-11-26T11:14:39Z" finished-at="2016-11-26T11:15:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSteps -->
       </class> <!-- Grp1.testCases.LoginTestCase -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

@@ -111,10 +111,11 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite verbose=&quot;0&quot; name=&quot;Suite&quot;&gt;
+&lt;suite verbose=&quot;0&quot; name=&quot;Suite&quot; parallel=&quot;classes&quot;&gt;
   &lt;test name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;Grp1.testCases.LoginTestCase&quot;/&gt;
+      &lt;class name=&quot;Grp1.testCases.LoginTestGrid&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -128,7 +129,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">Test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -188,6 +189,13 @@ return data;
               <div class="configuration-test before">
                 <span class="method-name">testSteps</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Grp1.testCases.LoginTestGrid</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">testSteps</span>
+                <span class="method-start">26760 ms</span>
               </div> <!-- configuration-test before -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

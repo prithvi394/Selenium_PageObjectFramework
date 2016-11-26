@@ -1,8 +1,11 @@
+Grp1\base\BaseGrid.class
 Grp1\testPOM\HomePagePOM.class
+Grp1\testCases\LoginTestGrid.class
 Grp1\base\ConfigurationClass.class
 ScratchBook\ScratchBook.class
 Grp1\base\BaseClass.class
 Grp1\HelperClasses\DatabaseHandler.class
+Grp1\testCases\PrintTest.class
 Grp1\testPOM\LandingPage.class
 Grp1\testPOM\SignInSignUpPagePOM.class
 Grp1\HelperClasses\ExcelHandler.class
