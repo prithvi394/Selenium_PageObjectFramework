@@ -18,28 +18,41 @@ public class ExcelHandler {
 	public static XSSFCell xLCell3;
 	public static XSSFCell xLCell;
 	
-	public void setExcelFile() throws IOException {	
+	public void setExcelFile(String className) throws IOException {	
 		
 		FileInputStream excelFile= new FileInputStream(ConfigurationClass.XLPath);
-		System.out.println(ConfigurationClass.XLPath);
+		//System.out.println(ConfigurationClass.XLPath);
 		XLWbook=new XSSFWorkbook(excelFile);
 		XLWSheet=XLWbook.getSheet(ConfigurationClass.XLSheetName);
-		System.out.println(XLWSheet.getSheetName());
+		//System.out.println(XLWSheet.getSheetName());
+		System.out.println(className);
 	}
 	
-	public  Map<String, String> getCellData(){
+	
+	//@SuppressWarnings("null")
+	//@SuppressWarnings("null")
+	public  List<ArrayList<String>> getCellData(){
 		int lastRow=XLWSheet.getLastRowNum();
-		System.out.println(lastRow);
+		//System.out.println(lastRow);
 		int counter=1;
-		Map <String,String> loginCreds=new HashMap<String,String>();
+		//Map <String,String> loginCreds=new HashMap<String,String>();
+		List<ArrayList<String>> arrayExcelReader =new ArrayList <ArrayList<String>>() ;
 			while(counter<=lastRow){
-				xLCell1=XLWSheet.getRow(counter).getCell(0);
-				xLCell2=XLWSheet.getRow(counter).getCell(1);
-				xLCell3=XLWSheet.getRow(counter).getCell(2);
-				loginCreds.put(xLCell1.getStringCellValue(), xLCell2.getStringCellValue());
+				//System.out.println(XLWSheet.getRow(counter).getCell(0).getStringCellValue());
+				//System.out.println(XLWSheet.getRow(counter).getCell(1).getStringCellValue());
+				//xLCell1=XLWSheet.getRow(counter).getCell(0);
+				//arrayExcelReader.get(0).add("test");
+				arrayExcelReader.add( new ArrayList<String>() );
+				arrayExcelReader.get(counter-1).add(XLWSheet.getRow(counter).getCell(0).getStringCellValue());
+				arrayExcelReader.get(counter-1).add(XLWSheet.getRow(counter).getCell(1).getStringCellValue());
+				arrayExcelReader.get(counter-1).add(XLWSheet.getRow(counter).getCell(2).getStringCellValue());
+				//arrayExcelReader[counter-1][0]=xLCell1.getStringCellValue();
+				//arrayExcelReader[counter-1][1]=XLWSheet.getRow(counter).getCell(1).getStringCellValue();
+				//arrayExcelReader[counter-1][2]=XLWSheet.getRow(counter).getCell(2).getStringCellValue();
+				//loginCreds.put(xLCell1.getStringCellValue(), xLCell2.getStringCellValue());
 				counter+=1;
 			}
-		return loginCreds;
+		return arrayExcelReader;
 		 
 	}
 	

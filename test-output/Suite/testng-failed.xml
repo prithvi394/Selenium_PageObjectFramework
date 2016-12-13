@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]">
-  <test name="Test(failed)">
+<suite thread-count="2" name="Failed suite [Suite]">
+  <test name="Test1(failed)">
     <classes>
-      <class name="Grp1.testCases.LoginTestCase">
+      <class name="Grp1.testCases.LoginTestGrid">
         <methods>
-          <include name="testSteps"/>
+          <include name="teardown"/>
+          <include name="testSteps" invocation-numbers="0 1 2 3 4 5"/>
         </methods>
-      </class> <!-- Grp1.testCases.LoginTestCase -->
+      </class> <!-- Grp1.testCases.LoginTestGrid -->
+      <class name="Grp1.testCases.CompleteSingleTransaction">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testSteps" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Grp1.testCases.CompleteSingleTransaction -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Suite] -->

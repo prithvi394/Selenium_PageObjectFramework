@@ -14,9 +14,11 @@ public class HomePagePOM {
 	
 	//Locators
 	WebDriver driver;
+	Logger log = LogManager.getLogger(LoginTestCase.class);
 	
 	public HomePagePOM(WebDriver driver) {
 		this.driver=driver;
+		
 		//PageFactory.initElements(driver, this);
 		// TODO Auto-generated constructor stub
 	}
@@ -30,13 +32,13 @@ public class HomePagePOM {
 
 
  public void ClickSignIn(){
-	 final Logger log = LogManager.getLogger(LoginTestCase.class);
 	 SignInLinkHomePage.click(); 
-	 log.info("Clicked on SignINButton");
+	 log.info("Clicked on SignIN button");
  }
  
  public void ClickContactUs(){
 	 driver.findElement(ContactUsHomePage).click(); 
+	 log.info("Clicked on ClickContactUs button");
  }
 
 

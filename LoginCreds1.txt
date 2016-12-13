@@ -1,0 +1,3 @@
+Login Id	Password
+seleniumtestemail1234@gmail.com	passw0rd1234
+prithviselenium@gmail.com	passw0rd1234

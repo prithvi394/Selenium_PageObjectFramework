@@ -27,14 +27,14 @@ public class BaseGrid {
 		 	driver =new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),capability);
 			 	
 			 driver.manage().window().maximize();
-			driver.manage().timeouts().implicitlyWait(240, TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			driver.get(baseURL);
 			
 		// }
 	 }
 	
 	public static void OpenUrl(WebDriver driver,String baseUrl){
-			System.out.println("I am trying to navigate to URL page ");
+			//System.out.println("I am trying to navigate to URL page ");
 			driver.get(baseUrl);
 			
 		}

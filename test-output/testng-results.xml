@@ -1,21 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="0" passed="0">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="53364" started-at="2016-11-26T16:14:12Z" finished-at="2016-11-26T16:15:05Z">
+  <suite name="Default suite" duration-ms="246243" started-at="2016-12-07T01:59:08Z" finished-at="2016-12-07T02:03:14Z">
     <groups>
+      <group name="Smoke Test">
+        <method signature="CompleteSingleTransaction.testSteps(java.lang.String, java.lang.String)[pri:0, instance:Grp1.testCases.CompleteSingleTransaction@56113384]" name="testSteps" class="Grp1.testCases.CompleteSingleTransaction"/>
+      </group> <!-- Smoke Test -->
     </groups>
-    <test name="Test" duration-ms="53364" started-at="2016-11-26T16:14:12Z" finished-at="2016-11-26T16:15:05Z">
-      <class name="Grp1.testCases.LoginTestCase">
-        <test-method status="PASS" signature="testSteps()[pri:0, instance:Grp1.testCases.LoginTestCase@7ac0e420]" name="testSteps" is-config="true" duration-ms="27097" started-at="2016-11-26T11:14:12Z" finished-at="2016-11-26T11:14:39Z">
+    <test name="Default test" duration-ms="246243" started-at="2016-12-07T01:59:08Z" finished-at="2016-12-07T02:03:14Z">
+      <class name="Grp1.testCases.CompleteSingleTransaction">
+        <test-method status="PASS" signature="testSteps(java.lang.String, java.lang.String)[pri:0, instance:Grp1.testCases.CompleteSingleTransaction@56113384]" name="testSteps" duration-ms="243905" started-at="2016-12-06T20:59:08Z" data-provider="dp" finished-at="2016-12-06T21:03:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[seleniumtestemail1234@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[passw0rd1234]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSteps -->
-        <test-method status="PASS" signature="testSteps()[pri:0, instance:Grp1.testCases.LoginTestGrid@289710d9]" name="testSteps" is-config="true" duration-ms="26261" started-at="2016-11-26T11:14:39Z" finished-at="2016-11-26T11:15:05Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Grp1.testCases.CompleteSingleTransaction@56113384]" name="tearDown" is-config="true" duration-ms="2145" started-at="2016-12-06T21:03:12Z" finished-at="2016-12-06T21:03:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testSteps status=SUCCESS method=CompleteSingleTransaction.testSteps(java.lang.String, java.lang.String)[pri:0, instance:Grp1.testCases.CompleteSingleTransaction@56113384] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSteps -->
-      </class> <!-- Grp1.testCases.LoginTestCase -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- Grp1.testCases.CompleteSingleTransaction -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Grp1.testCases.LoginTestCase">
+      <class name="Grp1.testCases.CompleteSingleTransaction">
         <methods>
-          <include name="iterate"/>
-          <include name="testSteps"/>
+          <include name="tearDown"/>
+          <include name="testSteps" invocation-numbers="0"/>
         </methods>
-      </class> <!-- Grp1.testCases.LoginTestCase -->
+      </class> <!-- Grp1.testCases.CompleteSingleTransaction -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
